@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="BackUp.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="PathToWatch" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">\\STORAGE\shared\ALL\MailProcessor.Tests</Value>
+    </Setting>
+    <Setting Name="PathToLog" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">D:\BackUp\MailProcessorTests</Value>
+    </Setting>
+    <Setting Name="Frequency" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">600000</Value>
+    </Setting>
+    <Setting Name="StorageTime" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">10</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
