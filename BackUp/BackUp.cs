@@ -28,7 +28,7 @@ namespace BackUp
 
         public void Start()
         {
-            logger.Write($"Запуск резерного копирования папки {sourcePath}.\r\n {Description()}");
+            logger.Write($"Запуск резерного копирования папки {sourcePath}.\r\n{Description()}");
             // устанавливаем метод обратного вызова
             TimerCallback tm = new TimerCallback(CheckFiles);
             // создаем таймер
@@ -140,7 +140,7 @@ namespace BackUp
             stringBuilder.AppendLine("Настройки резервного копирования:");
             stringBuilder.AppendLine($"Папка для которой будут создваться резервные копии - {sourcePath}");
             stringBuilder.AppendLine($"Папка для хранений резервных копий - {destinationPath}");
-            stringBuilder.AppendLine($"Частота проверки резервных копий - {frequency}");
+            stringBuilder.AppendLine($"Частота проверки резервных копий - {frequency/60000} минут");
             stringBuilder.AppendLine($"Количество дней для хранения резервных копий - {storageTime}");
 
             return stringBuilder.ToString();

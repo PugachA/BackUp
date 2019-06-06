@@ -24,7 +24,7 @@ namespace BackUp
             processInstaller = new ServiceProcessInstaller();
 
             processInstaller.Account = ServiceAccount.LocalSystem;
-            serviceInstaller.StartType = ServiceStartMode.Manual;
+            serviceInstaller.StartType = ServiceStartMode.Automatic;
             serviceInstaller.ServiceName = "BackUpService";
             Installers.Add(processInstaller);
             Installers.Add(serviceInstaller);
